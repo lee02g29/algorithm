@@ -30,7 +30,7 @@ class Main  {
 	    		
 	    		if(sum > n) { // 5키로를 계속 늘리다가, 넘어가면
 	    			sum = sum - 5; // 그 전 값을 사용
-	    			five--;
+	    			five--; // 봉지수도 같이 감소
 	    			break;
 	    		}
     		}
@@ -54,6 +54,7 @@ class Main  {
     					sum = sum - 8; // 3 + 5키로를 감소
     					three--;
     					five--;
+					// 봉지수도 같이 감소
     				}  				
     			} 			
     		}
