@@ -18,7 +18,7 @@ class Main  {
     	BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
     	
     	int n = Integer.parseInt( bf.readLine() );
-    	int sum = 0; // 현재 담은 설탕 무무게
+    	int sum = 0; // 현재 담은 설탕 무게
     	int five = 0; // 5키로 봉지수
     	int three = 0; // 3키로 봉지수
     	
