@@ -59,7 +59,7 @@ class Main  {
 	    			
 	    		}
 	    		
-	    		if(check && stack.size() != 0) bw.write("no" + "\n"); // 위에서 확인되지 않은 경우, 즉 여는 괄호만 입력되고 종료된 경우에도 x
+	    		if(check && stack.size() != 0) bw.write("no" + "\n"); // 모든 괄호를 확인했는데 스택이 비지 않았음 = 여는 괄호가 남았음 = 올바르지 않음
 	    		else if(check) bw.write("yes" + "\n"); // 다 확인을 했고, 그럼에도 check변수가 true이면 옳은 괄호쌍
     		}
     	}
