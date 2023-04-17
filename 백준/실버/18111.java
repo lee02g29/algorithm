@@ -64,7 +64,10 @@ class Main {
 			}
 		}
 
-		System.out.println(ans + " " + height); // 출력
+		bw.write(ans + " " + height + "\n"); // 출력
+        
+        	bw.flush();
+        	bw.close();
 
 	}
 }
