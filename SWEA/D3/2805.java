@@ -1,8 +1,9 @@
+import java.util.Scanner;
+import java.io.FileInputStream;
 import java.io.*;
-import java.util.*;
 
-public class Main {
-
+class Solution
+{
 	public static void main(String[] args) throws IOException {
 		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -28,8 +29,8 @@ public class Main {
 			for (int i = 0; i < n; i++) {
 
 				for (int j = (n - len) / 2; j < (n - len) / 2 + len; j++) { 
-          // 이번 줄의 시작점. 총 열의 개수에서 탐색칸의 수 빼고 2를 나눈다.
-          // 그리고 len만큼 탐색한다
+          			// 이번 줄의 시작점 : 총 열의 개수에서 탐색칸의 수 빼고 2를 나눈다.
+          			// 그리고 len만큼 탐색한다
 					sum += land[i][j];
 				}
 
@@ -46,5 +47,4 @@ public class Main {
 		bw.flush();
 		bw.close();
 	}
-
 }
