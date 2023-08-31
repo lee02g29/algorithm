@@ -36,12 +36,12 @@ public class Main
 			    for(int j = 0; j < 5; j++) { // 0~4칸에 오른발
 			        
 				    ddr[n + 1][i][next] = Math.min(ddr[n + 1][i][next], ddr[n][i][j] + move(j, next));
-            //  다음 위치, 오른발 에너지 = 기존에 움직여 본 에너지, 저번 위치 + 움직일 때 에너지(오른쪽 다리를 움직임) 중 최소값
+            //  다음 위치, 오른발 에너지 = 기존에 움직여 본 에너지, 현재 위치 + 움직일 때 에너지(오른쪽 다리를 움직임) 중 최소값
             // j 위치에서 -> next 위치로 이동
 				    // System.out.println(ddr[n][i][next] + " " + ddr[n + 1][i][next] + " " + (ddr[n][i][j] + move(j, next)));
 				     
 				    ddr[n + 1][next][j] = Math.min(ddr[n + 1][next][j], ddr[n][i][j] + move(i, next));
-            // 다음 위치, 왼발 에너지 = 기존에 움직여 본 에너지, 저번 위치 + 움직일 때 에너지(왼쪽 다리를 움직임)  중 최소값
+            // 다음 위치, 왼발 에너지 = 기존에 움직여 본 에너지, 현재 위치 + 움직일 때 에너지(왼쪽 다리를 움직임)  중 최소값
             // i 위치에서 -> next 위치로 이동
 				    // System.out.println(ddr[n][next][j] + " " + ddr[n + 1][next][j] + " " + (ddr[n][i][j] + move(i, next)));
 			    }
