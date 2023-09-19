@@ -7,11 +7,11 @@ class Main {
 		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
-		int test = Integer.parseInt( bf.readLine() );
+		int test = Integer.parseInt( bf.readLine() ); // 게임 수
 		
-		for(int t = 0; t < test; t++) {
+		for(int t = 0; t < test; t++) { 
 			String str = bf.readLine();
-			int k = Integer.parseInt( bf.readLine() );
+			int k = Integer.parseInt( bf.readLine() ); // 조건 : k개를 포함
 			
 			int min = Integer.MAX_VALUE; // 짧은 연속 문자열의 길이
 			int max = -1; // 긴 연속 문자열의 길이
