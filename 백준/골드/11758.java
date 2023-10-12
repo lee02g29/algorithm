@@ -26,16 +26,16 @@ public class Main {
     // 좌표 3
 
 		int slope = (x2 - x1) * (y3 - y2) - (y2 - y1) * (x3 - x2);
-    // 세 좌표의 외적
+    // 세 좌표의 외적 AB x AC
 		
-		if(slope > 0) { // 외적이 양수이면 sin < 180
+		if(slope > 0) { // 외적이 양수이면 반시계방샹
 			bw.write("1" + "\n");
-		} else if(slope < 0) { // 외적이 음수이면 sin > 180
+		} else if(slope < 0) { // 외적이 음수이면 시계방향
 			bw.write("-1" + "\n");
-		} else { // 외적이 0이면 sin == 180
+		} else { // 외적이 0이면 일직선(평행)
 			bw.write("0" + "\n");
 		}
-
+		
 		bw.flush();
 		bw.close();
 
