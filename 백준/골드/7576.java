@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class App {
+public class Main {
 
     static int[][] arr;   
     static Queue<Pair> queue;
