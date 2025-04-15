@@ -44,6 +44,7 @@ public class Main {
         }
         //
         bw.write(dp[glass - 1] + "\n");
+        // 배열의 끝에 저장된 값에는 항상 최대값이 저장됨
 
         bw.flush();
         bw.close();
